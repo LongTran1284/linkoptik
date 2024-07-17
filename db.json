@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userName": "Admin",
+      "password": "Admin@1984",
+      "userCode": "admin"
+    },
+    {
+      "id": "2",
+      "userName": "Guest",
+      "password": "Guest123456",
+      "userCode": "guest"
+    },
+    {
+      "id": "3",
+      "userName": "Linkoptik",
+      "password": "Linkoptik",
+      "userCode": "linkoptik"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "companyName": "Hien Long Corporation",
+      "address": "B40 KDC Kim Son",
+      "province": "Ho Chi Minh City",
+      "application": "CaCO3",
+      "model": "LT2200E + Hydrolink SE",
+      "orderDate": "03/06/2024",
+      "seller": "Long - HLSG",
+      "subdealer": false,
+      "tradingName": "",
+      "tradingAddress": "",
+      "status": "Success",
+      "successDate": "03/08/2024",
+      "failReason": ""
+    },
+    {
+      "id": "2",
+      "companyName": "Rong Tien",
+      "address": "42/14 Nguyen Huu Tien",
+      "province": "Ha Noi City",
+      "application": "Pesticide",
+      "model": "LT2200 + Hydrolink",
+      "orderDate": "03/06/2024",
+      "seller": "Long - HLSG",
+      "subdealer": true,
+      "tradingName": "ABC",
+      "tradingAddress": "",
+      "status": "Fail",
+      "successDate": "03/07/2024",
+      "failReason": "Buy another brand"
+    },
+    {
+      "id": "3",
+      "companyName": "Phu Bao Long",
+      "address": "Ha Dong",
+      "province": "Ha Noi City",
+      "application": "Pesticide",
+      "model": "LT2200 + Hydrolink",
+      "orderDate": "03/06/2024",
+      "seller": "Long - HLSG",
+      "subdealer": false,
+      "tradingName": "",
+      "tradingAddress": "",
+      "status": "Pending",
+      "successDate": "",
+      "failReason": ""
+    },
+    {
+      "id": "5",
+      "companyName": "testing 2",
+      "address": "here",
+      "province": "Da Nang",
+      "application": "CaCO3",
+      "model": "LT2200E + Hydrolink SE",
+      "orderDate": "03/06/2024",
+      "seller": "Long - HLSG",
+      "subdealer": false,
+      "tradingName": "XYZ",
+      "tradingAddress": "where",
+      "status": "Success",
+      "successDate": "03/07/2024",
+      "failReason": ""
+    },
+    {
+      "id": "6",
+      "companyName": "Cty Tân Đông Dương",
+      "address": "",
+      "province": "",
+      "application": "Ink",
+      "model": "",
+      "orderDate": "16/07/2024",
+      "seller": "Ms. Uyên - HLSG",
+      "subdealer": true,
+      "tradingName": "Cty Vạn Năng",
+      "tradingAddress": "",
+      "status": "Pending",
+      "successDate": "",
+      "failReason": ""
+    }
+  ]
+}
