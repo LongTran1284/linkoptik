@@ -61,8 +61,8 @@ export const routes: Routes = [
     ]}, 
     
 
-    {path: 'login', component: LoginComponent, title:'Login', 
-    },    
+    // {path: 'login', component: LoginComponent, title:'Login', 
+    // },    
     // {path: 'xepphong', 
     //     loadComponent: () => import('./components/xepphong/phong').then(m => m.PhongComponent),
     //     title:'Xep Phong', 
