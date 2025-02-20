@@ -67,78 +67,47 @@ export const routes: Routes = [
     //     loadComponent: () => import('./components/xepphong/phong').then(m => m.PhongComponent),
     //     title:'Xep Phong', 
     // },
-    // {path: 'admin', 
-    //     // component: AdminComponent, title:'Admin', 
+    
+    // {
+    //     path: 'admin', 
     //     canActivate: [authGuard],
     //     data: {role: 'admin'},
+    //     title:'Admin',
+    //     component: UserContentComponent,
     //     children: [
-    //         {path: 'customer', 
-    //             // component: AdminComponent, 
-    //             // loadComponent: () => import('./pages/users/admin.component').then(m => m.AdminComponent),
-    //             title:'Admin', },
-    //         {path: 'customer/:id', 
-    //             // component: DetailCustomerComponent, 
-    //             // loadComponent: () => import('./pages/detail-customer.component').then(m => m.DetailCustomerComponent),
-    //             title:'Customer Details'},
-    //         {path: 'user', 
-    //             // component: AdminComponent, 
-    //             loadComponent: () => import('./components/user-list/user-list.component').then(m => m.UserListComponent),
-    //             title:'Admin', },
-    //         {path: 'user/:id', 
-    //             // component: AdminComponent, 
-    //             // loadComponent: () => import('./pages/detail-user.component').then(m => m.DetailUserComponent),
-    //             title:'Admin', },
+    //         {path: 'customer', component: CustomerListComponent,},
+    //         {path: 'userlist', component: UserListComponent,},            
     //     ]
     // },
-    {
-        path: 'admin', 
-        canActivate: [authGuard],
-        data: {role: 'admin'},
-        title:'Admin',
-        component: UserContentComponent,
-        children: [
-            {path: 'customer', component: CustomerListComponent,},
-            {path: 'userlist', component: UserListComponent,},            
-        ]
-    },
 
-    {
-        path: 'guest', 
-        canActivate: [authGuard],
-        data: {role: 'guest'},
-        title:'Guest',
-        component: UserContentComponent,
-        children: [
-            {path: 'customer', component: CustomerListComponent,},
-            {path: 'userlist', component: UserListComponent,},            
-        ]
-    },
-   
-    // {path: 'linkoptik', 
-    //     // component: LinkoptikComponent, 
-    //     // loadComponent: () => import('./pages/users/linkoptik.component').then(m => m.LinkoptikComponent),
-    //     title:'Linkoptik', 
+    // {
+    //     path: 'guest', 
     //     canActivate: [authGuard],
-    //     data: {role: 'linkoptik'}
+    //     data: {role: 'guest'},
+    //     title:'Guest',
+    //     component: UserContentComponent,
+    //     children: [
+    //         {path: 'customer', component: CustomerListComponent,},
+    //         {path: 'userlist', component: UserListComponent,},            
+    //     ]
     // },
-        
-    {
-        path: 'user/:id', 
-        canActivate: [authGuard],
-        data: {role: 'user'},        
-        title:'Linkoptik',     
-        component: UserContentComponent,
-        children: [
-            {path: 'customer', component: CustomerListComponent}]        
-    },
+    // {
+    //     path: 'user/:id', 
+    //     canActivate: [authGuard],
+    //     data: {role: 'user'},        
+    //     title:'Linkoptik',     
+    //     component: UserContentComponent,
+    //     children: [
+    //         {path: 'customer', component: CustomerListComponent}]        
+    // },
 
-    {path: 'create-account', 
-        // component: CreateAccountComponent, 
-        loadComponent: () => import('./pages/user-manage/create-account.component').then(m => m.CreateAccountComponent),
-        title:'Create Account',
-        canActivate: [authGuard],
-        data: {role: 'create-account'},        
-    },
+    // {path: 'create-account', 
+    //     // component: CreateAccountComponent, 
+    //     loadComponent: () => import('./pages/user-manage/create-account.component').then(m => m.CreateAccountComponent),
+    //     title:'Create Account',
+    //     canActivate: [authGuard],
+    //     data: {role: 'create-account'},        
+    // },
     {path: '**', component: NotFoundComponent, title:'Not Found'}, 
     
 ];
